@@ -6,7 +6,12 @@
 //  Copyright (c) 2015 Vinicius Miana. All rights reserved.
 //
 
-@interface Contador : NSObject 
+@interface Contador : NSObject
+{
+    int boy;
+    int girl;
+}
++ (Contador *) instancia;
 
 - (void)maisUmCueca;
 - (void)maisUmaGata;

@@ -19,7 +19,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    contador = [[Contador alloc] init];
+    contador = [Contador instancia];
     // Do any additional setup after loading the view, typically from a nib.
 }
 
@@ -31,9 +31,7 @@
 - (IBAction)clickBoy:(id)sender {
     [contador maisUmCueca];
     NSLog(@"Meninos - %i",[contador getBoys]);
-    // oq sera que faz esse ibaction?
-    //bora pesquisar....
-}
+    }
 
 - (IBAction)clickGirl:(id)sender {
     [contador maisUmaGata];
