@@ -2,7 +2,7 @@
 //  FirstViewController.m
 //  ContaPessoas
 //
-//  Created by Vinicius Miana on 2/18/15.
+//  Created by Matheus Amancio on 2/19/15.
 //  Copyright (c) 2015 Vinicius Miana. All rights reserved.
 //
 
@@ -31,6 +31,8 @@
 - (IBAction)clickBoy:(id)sender {
     [contador maisUmCueca];
     NSLog(@"Meninos - %i",[contador getBoys]);
+    // oq sera que faz esse ibaction?
+    //bora pesquisar....
 }
 
 - (IBAction)clickGirl:(id)sender {
