@@ -14,6 +14,7 @@
 
 @implementation Contador
 
+
 static Contador *_instancia = nil;
 
 +(Contador *) instancia{
@@ -36,10 +37,18 @@ static Contador *_instancia = nil;
 
 - (void)maisUmCueca {
     boy = boy + 1;
+    [_mostrar atualizar];
 }
 - (void)maisUmaGata {
     girl++;
+    [_mostrar atualizar];
 }
+-(void)zerar{
+    boy =0;
+    girl =0;
+    [_mostrar atualizar];
+}
+
 
 -(int)getBoys {
     return boy;
@@ -49,7 +58,9 @@ static Contador *_instancia = nil;
     return girl;
 }
 
-
+-(int)getTotal{
+    return girl+boy;
+}
 
 @end
 
